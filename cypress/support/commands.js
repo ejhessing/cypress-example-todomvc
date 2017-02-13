@@ -1,21 +1,8 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create the custom commands: 'createDefaultTodos'
-// and 'createTodo'.
-//
-// The commands.js file is a great place to
-// modify existing commands and create custom
-// commands for use throughout your tests.
-//
-// You can read more about custom commands here:
-// https://on.cypress.io/api/commands
-// ***********************************************
-
 Cypress.addParentCommand("createDefaultTodos", function(){
 
-  var TODO_ITEM_ONE   = "buy some cheese"
-  var TODO_ITEM_TWO   = "feed the cat"
-  var TODO_ITEM_THREE = "book a doctors appointment"
+  const TODO_ITEM_ONE = "Get some sleep", 
+        TODO_ITEM_TWO = "Buy some food",
+        TODO_ITEM_THREE = "Have a party";
 
   // begin the command here, which by will display
   // as a 'spinning blue state' in the UI to indicate
